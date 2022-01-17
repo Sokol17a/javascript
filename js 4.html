@@ -14,10 +14,12 @@
             'Р': 4,
             'О': 7,
         }
-        let k =
-            dict['Н'] + dict['Н'] + dict['Н'] + dict['К'] + dict['П'] + dict['Р'] + dict['Р'] + dict['Р'] + dict['Р'] + dict['О'] + dict['Р'] + dict['П'] + dict['П'] + dict['П'] + dict['П'] + dict['П']
-        console.log(dict);
-        console.log(k)
+        const word = 'НННКПРРРРОРППППР'
+        sum = 0
+        for (let i = 0; i < word.length; i = i + 1) {
+            sum = sum + dict[word[i]]
+            console.log(sum)
+        }
     </script>
 </body>
 
