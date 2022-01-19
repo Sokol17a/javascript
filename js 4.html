@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        let dict = {
+            'Н': 1,
+            'К': 5,
+            'П': 2,
+            'Р': 4,
+            'О': 7,
+        }
+        const word = 'НННКПРРРРОРППППР'
+        sum = 0
+        for (let i = 0; i < word.length; i = i + 1) {
+            sum = sum + dict[word[i]]
+            console.log(sum)
+        }
+    </script>
+</body>
+
+</html>
